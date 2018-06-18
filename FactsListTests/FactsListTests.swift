@@ -33,4 +33,25 @@ class FactsListTests: XCTestCase {
         }
     }
     
+    /**
+     Write test case for Facts List pasring
+     */
+     func testParseFactsList() {
+        // TODO: Test Case Pending
+    }
+    
 }
+
+extension FileManager {
+    
+    /**
+     Write test case for read Facts List JSON from local file
+     */
+    static func readJson(forResource fileName: String ) -> Data? {
+        // TODO: Test Case Pending
+        
+        return nil
+    }
+    
+}
+
