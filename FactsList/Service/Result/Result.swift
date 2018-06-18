@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+enum Result<T, E: Error> {
+    
+    //For success case
+    case success(T)
+    
+    //For failure case
+    case failure(E)
+}
