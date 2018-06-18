@@ -11,9 +11,9 @@ import Foundation
 struct FactsListViewModel {
     
     weak var service: FactsListServiceProtocol?
-    weak var dataSource : GenericDataSource<List>?
+    weak var dataSource : GenericDataSource<FactsList>?
     
-    init(service: FactsListServiceProtocol = FactsListService.shared, dataSource : GenericDataSource<List>?) {
+    init(service: FactsListServiceProtocol = FactsListService.shared, dataSource : GenericDataSource<FactsList>?) {
         self.service = service
         self.dataSource = dataSource
     }

@@ -13,14 +13,13 @@ class GenericDataSource<T> : NSObject {
     var data: DynamicValue<[T]> = DynamicValue([])
 }
 
-class FactsListDataSource: GenericDataSource<List>, UITableViewDataSource {
+class FactsListDataSource: GenericDataSource<FactsList>, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1 //Fixed for now
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("data.value.count",data.value.count)
         return data.value.count
     }
     

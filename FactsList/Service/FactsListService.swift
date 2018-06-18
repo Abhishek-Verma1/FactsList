@@ -9,7 +9,7 @@
 import Foundation
 
 protocol FactsListServiceProtocol : class {
-    func fetchFactsList(_ completion: @escaping ((Result<[List], ErrorResult>) -> Void))
+    func fetchFactsList(_ completion: @escaping ((Result<[FactsList], ErrorResult>) -> Void))
 }
 
 final class FactsListService: RequestHandler, FactsListServiceProtocol {
@@ -21,7 +21,7 @@ final class FactsListService: RequestHandler, FactsListServiceProtocol {
     
     var task : URLSessionTask?
     
-    func fetchFactsList(_ completion: @escaping ((Result<[List], ErrorResult>) -> Void)) {
+    func fetchFactsList(_ completion: @escaping ((Result<[FactsList], ErrorResult>) -> Void)) {
         // cancel previous request if already in progress
         self.cancelFetchFactsList()
         

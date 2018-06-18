@@ -15,7 +15,7 @@ class FactsListCell: UITableViewCell {
     @IBOutlet weak var factsImage: UIImageView!
     
 
-    func displayFacts(factsList: List) {
+    func displayFacts(factsList: FactsList) {
         titleLabel?.text = factsList.title
         describtionLabel?.text = factsList.describtion
     }

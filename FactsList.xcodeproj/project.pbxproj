@@ -13,7 +13,7 @@
 		D6CF13AA20D83481006F128D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CF13A820D83481006F128D /* LaunchScreen.storyboard */; };
 		D6CF13B520D83481006F128D /* FactsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13B420D83481006F128D /* FactsListTests.swift */; };
 		D6CF13C020D83481006F128D /* FactsListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13BF20D83481006F128D /* FactsListUITests.swift */; };
-		D6CF13D120D8380F006F128D /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13D020D8380F006F128D /* List.swift */; };
+		D6CF13D120D8380F006F128D /* FactsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13D020D8380F006F128D /* FactsList.swift */; };
 		D6CF13D420D838FE006F128D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13D320D838FE006F128D /* Reachability.swift */; };
 		D6CF13D620D83B58006F128D /* FactsListServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13D520D83B58006F128D /* FactsListServiceTests.swift */; };
 		D6CF13D820D83BB2006F128D /* FactsListDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13D720D83BB2006F128D /* FactsListDataSourceTests.swift */; };
@@ -62,7 +62,7 @@
 		D6CF13BB20D83481006F128D /* FactsListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactsListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CF13BF20D83481006F128D /* FactsListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListUITests.swift; sourceTree = "<group>"; };
 		D6CF13C120D83481006F128D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D6CF13D020D8380F006F128D /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		D6CF13D020D8380F006F128D /* FactsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsList.swift; sourceTree = "<group>"; };
 		D6CF13D320D838FE006F128D /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		D6CF13D520D83B58006F128D /* FactsListServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListServiceTests.swift; sourceTree = "<group>"; };
 		D6CF13D720D83BB2006F128D /* FactsListDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListDataSourceTests.swift; sourceTree = "<group>"; };
@@ -167,7 +167,7 @@
 		D6CF13CF20D837EA006F128D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D6CF13D020D8380F006F128D /* List.swift */,
+				D6CF13D020D8380F006F128D /* FactsList.swift */,
 				D6CF13F220D85353006F128D /* DynamicValue.swift */,
 			);
 			path = Model;
@@ -382,7 +382,7 @@
 				D6CF13E720D8414E006F128D /* ErrorResult.swift in Sources */,
 				D6CF13EB20D8467E006F128D /* RequestFactory.swift in Sources */,
 				D6CF13DF20D83EA4006F128D /* FactsListDataSource.swift in Sources */,
-				D6CF13D120D8380F006F128D /* List.swift in Sources */,
+				D6CF13D120D8380F006F128D /* FactsList.swift in Sources */,
 				D6CF13E920D843F6006F128D /* FactsListService.swift in Sources */,
 				D6CF13F320D85353006F128D /* DynamicValue.swift in Sources */,
 				D6CF13F820D85C30006F128D /* FactsListCell.swift in Sources */,
