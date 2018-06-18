@@ -12,7 +12,13 @@ class FactsListCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var describtionLabel: UILabel!
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var factsImage: UIImageView!
+    
+
+    func displayFacts(factsList: List) {
+        titleLabel?.text = factsList.title
+        describtionLabel?.text = factsList.describtion
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

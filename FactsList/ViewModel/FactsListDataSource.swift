@@ -20,11 +20,16 @@ class FactsListDataSource: GenericDataSource<List>, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("data.value.count",data.value.count)
         return data.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FactsListCell", for: indexPath) as! FactsListCell
+        let listValue = self.data.value[indexPath.row]
+        cell.displayFacts(factsList: listValue)
+        
         return UITableViewCell()
     }
     

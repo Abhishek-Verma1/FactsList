@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var tableView : UITableView!
+    
     let dataSource = FactsListDataSource()
     
     lazy var viewModel : FactsListViewModel = {
@@ -20,6 +22,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.tableView.dataSource = self.dataSource
+        self.dataSource.data.addAndNotify(observer: self) { [weak self] in
+            self?.tableView.reloadData()
+        }
         
         self.viewModel.fetchListDate()
     }
