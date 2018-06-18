@@ -9,10 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let dataSource = FactsListDataSource()
+    
+    lazy var viewModel : FactsListViewModel = {
+        let viewModel = FactsListViewModel(dataSource: dataSource)
+        return viewModel
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.viewModel.fetchListDate()
     }
 
     override func didReceiveMemoryWarning() {
