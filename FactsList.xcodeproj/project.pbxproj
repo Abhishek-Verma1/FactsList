@@ -27,6 +27,7 @@
 		D6CF13EB20D8467E006F128D /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13EA20D8467E006F128D /* RequestFactory.swift */; };
 		D6CF13ED20D8468A006F128D /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13EC20D8468A006F128D /* RequestService.swift */; };
 		D6CF13EF20D84696006F128D /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13EE20D84696006F128D /* RequestHandler.swift */; };
+		D6CF13F120D849CA006F128D /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13F020D849CA006F128D /* ParserHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D6CF13EA20D8467E006F128D /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
 		D6CF13EC20D8468A006F128D /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		D6CF13EE20D84696006F128D /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		D6CF13F020D849CA006F128D /* ParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 		D6CF13E320D840AF006F128D /* Parser */ = {
 			isa = PBXGroup;
 			children = (
+				D6CF13F020D849CA006F128D /* ParserHelper.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				D6CF13EF20D84696006F128D /* RequestHandler.swift in Sources */,
 				D6CF13A020D83481006F128D /* AppDelegate.swift in Sources */,
 				D6CF13ED20D8468A006F128D /* RequestService.swift in Sources */,
+				D6CF13F120D849CA006F128D /* ParserHelper.swift in Sources */,
 				D6CF13D420D838FE006F128D /* Reachability.swift in Sources */,
 				D6CF13E520D8413F006F128D /* Result.swift in Sources */,
 				D6CF13E720D8414E006F128D /* ErrorResult.swift in Sources */,
