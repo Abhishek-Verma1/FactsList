@@ -111,6 +111,7 @@
 		D6CF139E20D83481006F128D /* FactsList */ = {
 			isa = PBXGroup;
 			children = (
+				D6CF13E020D84075006F128D /* Service */,
 				D6CF13D220D838EA006F128D /* Resources */,
 				D6CF13DB20D83E51006F128D /* ViewModel */,
 				D6CF13CF20D837EA006F128D /* Model */,
@@ -168,6 +169,37 @@
 				D6CF13DE20D83EA4006F128D /* FactsListDataSource.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D6CF13E020D84075006F128D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF13E120D840AF006F128D /* Network */,
+				D6CF13E320D840AF006F128D /* Parser */,
+				D6CF13E220D840AF006F128D /* Result */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D6CF13E120D840AF006F128D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D6CF13E220D840AF006F128D /* Result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		D6CF13E320D840AF006F128D /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
