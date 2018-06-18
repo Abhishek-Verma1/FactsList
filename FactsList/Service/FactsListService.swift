@@ -12,7 +12,7 @@ protocol FactsListServiceProtocol : class {
     func fetchFactsList(_ completion: @escaping ((Result<[List], ErrorResult>) -> Void))
 }
 
-class FactsListService {
+final class FactsListService: RequestHandler, FactsListServiceProtocol {
     
     static let shared = FactsListService()
     
@@ -21,10 +21,11 @@ class FactsListService {
     
     var task : URLSessionTask?
     
-    func fetchFactsList(completion: @escaping ((Result<[List],ErrorResult>) -> Void)) {
-        
+    func fetchFactsList(_ completion: @escaping ((Result<[List], ErrorResult>) -> Void)) {
         // cancel previous request if already in progress
         self.cancelFetchFactsList()
+        
+        task = RequestService().loadData(urlString: endpoint, completion: self.networkResult(completion: completion))
     }
     
     func cancelFetchFactsList() {

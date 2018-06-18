@@ -14,3 +14,15 @@ struct List {
     let imageURL : String
 }
 
+/**
+ For storing values in List model
+ */
+extension List : Parceable {
+    
+    static func parseObject(dictionary: [String : Any]) -> Result<List, ErrorResult> {
+        return Result.failure(ErrorResult.parser(string: "Unable to parse facts list"))
+    }
+    
+    
+}
+

@@ -11,6 +11,12 @@ import Foundation
 struct FactsListViewModel {
     
     weak var service: FactsListServiceProtocol?
+    weak var dataSource : GenericDataSource<List>?
+    
+    init(service: FactsListServiceProtocol = FactsListService.shared, dataSource : GenericDataSource<List>?) {
+        self.service = service
+        self.dataSource = dataSource
+    }
     
     func fetchListDate(_ completion: ((Result<Bool, ErrorResult>) -> Void)? = nil) {
         
@@ -25,7 +31,7 @@ struct FactsListViewModel {
                 switch result {
                 case .success(let list) :
                     // reload data
-                    
+                    self.dataSource?.data.value = list
                     completion?(Result.success(true))
                     
                     break
@@ -36,9 +42,7 @@ struct FactsListViewModel {
                     break
                 }
             }
-            
         }
     }
-    
-    
+
 }
