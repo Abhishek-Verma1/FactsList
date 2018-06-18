@@ -23,11 +23,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //Refresh bugtton
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshTapped))
+
+        self.title = "About Canada"
+        
         self.tableView.dataSource = self.dataSource
         self.dataSource.data.addAndNotify(observer: self) { [weak self] in
             self?.tableView.reloadData()
         }
         
+        self.viewModel.fetchListDate()
+    }
+    
+    /**
+     Function for refresh the data
+     */
+    @objc func refreshTapped() {
         self.viewModel.fetchListDate()
     }
 
