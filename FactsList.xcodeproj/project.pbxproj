@@ -21,6 +21,8 @@
 		D6CF13DA20D83C42006F128D /* FactsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13D920D83C42006F128D /* FactsListViewModelTests.swift */; };
 		D6CF13DD20D83E95006F128D /* FactsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13DC20D83E95006F128D /* FactsListViewModel.swift */; };
 		D6CF13DF20D83EA4006F128D /* FactsListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13DE20D83EA4006F128D /* FactsListDataSource.swift */; };
+		D6CF13E520D8413F006F128D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13E420D8413F006F128D /* Result.swift */; };
+		D6CF13E720D8414E006F128D /* ErrorResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF13E620D8414E006F128D /* ErrorResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		D6CF13D920D83C42006F128D /* FactsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListViewModelTests.swift; sourceTree = "<group>"; };
 		D6CF13DC20D83E95006F128D /* FactsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListViewModel.swift; sourceTree = "<group>"; };
 		D6CF13DE20D83EA4006F128D /* FactsListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsListDataSource.swift; sourceTree = "<group>"; };
+		D6CF13E420D8413F006F128D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		D6CF13E620D8414E006F128D /* ErrorResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,8 @@
 		D6CF13E220D840AF006F128D /* Result */ = {
 			isa = PBXGroup;
 			children = (
+				D6CF13E420D8413F006F128D /* Result.swift */,
+				D6CF13E620D8414E006F128D /* ErrorResult.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -340,6 +346,8 @@
 				D6CF13A220D83481006F128D /* ViewController.swift in Sources */,
 				D6CF13A020D83481006F128D /* AppDelegate.swift in Sources */,
 				D6CF13D420D838FE006F128D /* Reachability.swift in Sources */,
+				D6CF13E520D8413F006F128D /* Result.swift in Sources */,
+				D6CF13E720D8414E006F128D /* ErrorResult.swift in Sources */,
 				D6CF13DF20D83EA4006F128D /* FactsListDataSource.swift in Sources */,
 				D6CF13D120D8380F006F128D /* List.swift in Sources */,
 			);
