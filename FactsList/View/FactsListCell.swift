@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class FactsListCell: UITableViewCell {
 
@@ -18,6 +19,7 @@ class FactsListCell: UITableViewCell {
     func displayFacts(factsList: FactsList) {
         titleLabel?.text = factsList.title
         describtionLabel?.text = factsList.describtion
+        factsImage.sd_setImage(with: URL(string: factsList.imageURL), placeholderImage: UIImage(named: "placeholder.png"))
     }
     
     override func awakeFromNib() {
